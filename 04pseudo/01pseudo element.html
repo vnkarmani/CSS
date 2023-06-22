@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements</title>
+    <style>
+        div::first-line{
+            color: white;
+            background-color: maroon;
+        }
+        p::first-letter{
+            color: red;
+        }
+        p::first-line{
+            color: blue;
+        }
+        p::before{
+            content:"*";
+        }
+        div::after{
+            content:"*#";
+        }
+        ::selection{
+            background-color: maroon;
+            color: white;
+        }
+        ::marker{
+            color:blue;
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo Elements</h1>
+    <div>
+        Style the first letter, or line, of an element.<br>
+        Insert content before, or after, the content of an element
+    </div>
+    <p>TOPS organizes a JobFest where 50+ Companies interview Candidates for their Job Openings. This event is organized
+        at a Convention center</p>
+    <p>TOPS has partnered with 3000+ IT Companies to provide Best Placements to Fresher’s and Experience candidates
+        Enter your Details for Free Job Search Support</p>
+        <ol>
+            <li>Gujarat university</li>
+            <li>HNGU university</li>
+            <li>Parul university</li>
+            <li>Nirma university</li>
+        </ol>
+        <ul>
+            <li>Gujarat university</li>
+            <li>HNGU university</li>
+            <li>Parul university</li>
+            <li>Nirma university</li>
+        </ul>
+</body>
+
+</html>
