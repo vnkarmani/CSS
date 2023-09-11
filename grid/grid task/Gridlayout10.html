@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridlayout-10</title>
+    <style>
+        #container{
+            display: grid;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            margin-top: 100px;
+            grid-template-rows: 50px 1fr 50px;
+            grid-template-columns:80px 1fr 50px;
+            grid-template-areas:
+            "header header ads"
+            "nav article article"
+            "nav footer footer";
+            gap: 5px;
+            text-align: center;
+            border: 3px solid;
+            
+        }
+        .header{
+            grid-area: header;
+            background-color: rgba(66, 243, 66, 0.699);
+            line-height: 50px;
+        }
+        .nav{
+            grid-area: nav;
+            background-color: rgba(66, 243, 66, 0.699);
+            line-height: 200px;
+        }
+        .article{
+            grid-area: article;
+            background-color: rgba(66, 243, 66, 0.699);
+            line-height: 350px;
+        }
+        .ads{
+            grid-area: ads;
+            background-color: rgba(66, 243, 66, 0.699);
+            line-height: 50px;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: rgba(66, 243, 66, 0.699);
+            line-height: 50px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <div class="header">Header</div>
+        <div class="nav">Nav</div>
+        <div class="article">Article</div>
+        <div class="ads">Ads</div>
+        <div class="footer">Footer</div>
+    </section>
+</body>
+</html>

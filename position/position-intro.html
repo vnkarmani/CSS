@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: auto;
+        }
+        .container{
+        height: 3000px;
+        background-color: aqua;
+        }
+
+        .container1 {
+            height: 300px;
+            width: 50%;
+            border: 1px solid black;
+        }
+
+        #child1 {
+            border: 1px solid black;
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            display: inline-block;
+
+        }
+
+        #child2 {
+            border: 1px solid black;
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            display: inline-block;
+            position: relative;
+            top: 20px;
+            right: 50px;
+        }
+
+        .container2 {
+            height: 300px;
+            width: 50%;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        #child3 {
+            border: 1px solid black;
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            display: inline-block;
+
+        }
+
+        #child4 {
+            border: 1px solid black;
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            display: inline-block;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+        #child5{
+            border: 1px solid black;
+            height: 150px;
+            width: 150px;
+            background-color: green;
+            display: inline-block;
+        }
+        #child6{
+            border: 1px solid black;
+            height: 150px;
+            width: 150px;
+            background-color: black;
+            display: inline-block;
+            position: sticky;
+            bottom: 20px;
+        }
+        
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+    <div class="container1">
+        <h1>position:relative</h1>
+        <div id="child1"></div>
+        <div id="child2"></div>
+    </div>
+    <hr>
+    <div class="container2">
+        <h1>position:absolute & fixed</h1>
+        <div id="child3"></div>
+        <div id="child4"></div>
+        <div id="child5"></div>
+        <div id="child6"></div>
+     </div>
+    </div>
+</body>
+
+</html>

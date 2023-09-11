@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.row>* {
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+@media(min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .col100,
+    .col50,
+    .col33,
+    .col25,
+    .col20,
+    .col16 {
+        width: 100%;
+    }
+
+
+}
+@media (min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+    .col100 {
+        width:100%;
+    }
+    .col50{
+        width: 50%;
+    }
+    .col33{
+        width: 50%;
+    }
+    .col25{
+        width: 50%;
+    }
+    .col20{
+        width: 50%;
+    }
+    .col16{
+        width: 33.33%;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        max-width: 940px;
+    }
+
+    .col100 {
+        width: 100%;
+    }
+
+    .col50 {
+        width: 50%;
+
+    }
+
+    .col33 {
+        width: 33.33%;
+    }
+
+    .col25 {
+        width: 25%;
+    }
+
+    .col20 {
+        width: 20%;
+    }
+
+    .col16 {
+        width: 16.66%;
+    }
+
+
+}
+   </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col100">col1</div>
+        </div>
+        <div class="row">
+            <div class="col50">col1</div>
+            <div class="col50">col2</div>
+        </div>
+        <div class="row">
+            <div class="col33">col1</div>
+            <div class="col33">col2</div>
+            <div class="col33">col3</div>
+        </div>
+        <div class="row">
+            <div class="col25">col1</div>
+            <div class="col25">col2</div>
+            <div class="col25">col3</div>
+            <div class="col25">col4</div>
+        </div>
+        <div class="row">
+            <div class="col20">col1</div>
+            <div class="col20">col2</div>
+            <div class="col20">col3</div>
+            <div class="col20">col4</div>
+            <div class="col20">col5</div>
+        </div>
+        <div class="row">
+            <div class="col16">col1</div>
+            <div class="col16">col2</div>
+            <div class="col16">col3</div>
+            <div class="col16">col4</div>
+            <div class="col16">col5</div>
+            <div class="col16">col6</div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

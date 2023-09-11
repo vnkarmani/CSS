@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+
+        .main1 {
+            display: flex;
+            height: 150px;
+            width: 1000px;
+            background-color: rgb(230, 225, 219);
+            border: 2px solid coral;
+        }
+
+        .main2 {
+            display: flex;
+            height: 200px;
+            width: 1000px;
+            background-color: rgb(230, 228, 219);
+            border: 2px solid coral;
+            justify-content: center;
+        }
+
+        .box1 {
+            background-color: aqua;
+            height: 130px;
+            width: 150px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .child1 {
+            background-color: pink;
+            width: 120px;
+            height: 20px;
+            border-radius: 5px;
+            align-self: flex-end;
+            margin-top: 100px;
+            margin-left: 15px;
+
+        }
+
+        .box2 {
+            display: flex;
+            background-color: aqua;
+            height: 130px;
+            width: 200px;
+            border-radius: 10px;
+            margin: 10px;
+            justify-content: space-between;
+        }
+
+        .child2 {
+            background-color: pink;
+            width: 30px;
+            height: 120px;
+            border-radius: 5px;
+            margin-left: 5px;
+            margin-top: 5px;
+
+        }
+
+        .baby {
+            background-color: darkorange;
+            width: 20px;
+            height: 30px;
+            border-radius: 5px;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+
+        .child3 {
+            background-color: pink;
+            width: 30px;
+            height: 120px;
+            border-radius: 5px;
+            align-self: center;
+
+        }
+
+        .child4 {
+
+            background-color: pink;
+            width: 30px;
+            height: 120px;
+            border-radius: 5px;
+            margin-right: 5px;
+            margin-top: 5px;
+
+
+        }
+
+        .box3 {
+            background-color: aqua;
+            height: 180px;
+            width: 170px;
+            border-radius: 10px;
+            margin: 10px;
+            justify-content: space-between;
+        }
+
+        .child5 {
+            background-color: pink;
+            width: 120px;
+            height: 20px;
+            border-radius: 5px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .child6 {
+            background-color: pink;
+            width: 130px;
+            height: 80px;
+            border-radius: 5px;
+            margin-left: 20px;
+            margin-top: 60px;
+            padding-top: 5px;
+
+        }
+
+        .baby1 {
+            background-color: coral;
+            height: 15px;
+            width: 80px;
+            margin-left: 20px;
+            border-radius: 20px;
+        }
+
+        .baby2 {
+            background-color: coral;
+            height: 15px;
+            width: 80px;
+            margin-left: 20px;
+            margin-top: 40px;
+            border-radius: 20px;
+
+        }
+
+        .box4 {
+            display: flex;
+            background-color: aqua;
+            height: 180px;
+            width: 200px;
+            border-radius: 10px;
+            margin: 10px;
+            justify-content: space-between;
+
+        }
+        .child7{
+            background-color: pink;
+            width: 180px;
+            border-radius: 10px;
+            margin-top: 50px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        .baby3{
+            background-color: yellowgreen;
+            height: 100px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-left: 10px;
+
+        }
+        .baby4{
+            display: inline-block;
+            background-color: pink;
+            height: 20px;
+            width: 70px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main1">
+        <div class="box1">
+            <div class="child1"></div>
+        </div>
+        <div class="box2">
+            <div class="child2">
+                <div class="baby"></div>
+            </div>
+            <div class="child3"></div>
+            <div class="child4"></div>
+
+        </div>
+    </div>
+    <div class="main2">
+        <div class="box3">
+            <div class="child5"></div>
+            <div class="child6">
+                <div class="baby1"></div>
+                <div class="baby2"></div>
+            </div>
+        </div>
+        <div class="box4">
+          <div class="child7">
+            <div class="baby3">
+                <div class="baby4"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+
+</html>

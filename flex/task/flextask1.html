@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.parent{
+    display:flex;
+    width:1000px;
+    background-color: white;
+
+}
+.class1{
+    width:200px;
+    height:200px;
+    border: 2px solid;
+    background-color:blue;
+    text-align:center;
+}
+.class2{
+
+    width:100px;
+    height:200px;
+    border: 2px solid;
+    background-color:blue;
+    text-align:center;
+
+}
+.class3{
+    flex-grow: 1;
+    border: 2px solid;
+    background-color:blue;
+    text-align:center;
+}
+.master{
+    display: flex;
+    width:1000px;
+    background-color: black;
+
+}
+.class4{
+    border: 2px solid;
+    background-color: aqua;
+    width: 100px;
+    flex-grow: 2;    
+    text-align: center;
+}
+.class5{
+    border: 2px solid;
+    background-color:rgb(199, 138, 138);
+    width: 100px;
+    flex-grow: 1;
+    text-align: center;
+}
+.class6{
+    border: 2px solid;
+    background-color: aqua;
+    width: 100px;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="class1">confused</div>
+    &nbsp;<div class="class2">happy</div>
+    &nbsp;<div class="class3">sad</div>
+</div><br>
+<div class="master">
+    <div class="class4">warm</div>
+    <div class="class5">cool</div>
+    <div class="class6">hot</div>
+</div>
+</body>
+</html>

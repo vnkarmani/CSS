@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        #container{
+            display: grid;
+            height:100vh;
+            width:100vw;
+            margin: auto;
+            grid-template-columns:1fr 1fr 1fr 1fr ;
+            grid-template-rows: 10vh 1fr 15vh 15vh 15vh;
+            grid-template-areas: 
+            "Header Menu Menu Menu"
+            "Hero Hero Hero Hero"
+            "Main Main eight Image"
+            "Main Main eight Extra"
+            "Banner Banner Banner Banner";
+         }
+        .one{
+            grid-area: Header;
+            background-color: black;
+            color: white;
+
+        }
+        .two{
+            grid-area: Menu;
+            background-color: rgba(250, 38, 73, 0.877);
+            color: white;
+        }
+        .three{
+            grid-area: Hero;
+            background-color:rgba(9, 169, 218, 0.815);
+            color: white;
+        }
+        .four{
+            grid-area: Main;
+            background-color:rgb(71, 69, 69);
+            color: white;
+        }
+        .five{
+            grid-area: Banner;
+            background-color:rgba(253, 159, 92, 0.815);
+        }
+        .six{
+            grid-area: Extra;
+            background-color:teal;
+        }
+        .seven{
+            grid-area: Image;
+            background-color:rgba(193, 247, 247, 0.87);
+        }
+        .eight
+        {
+            grid-area: eight;
+            background-color:white;
+        }
+        @media (min-width:350px)and (max-width:700px){
+            #container {
+                grid-template-rows: 50px 1fr 1fr 80px 80px;
+                grid-template-columns: 80px 1fr 80px;
+                grid-template-areas:
+                    "Header Header Header"
+                    "Hero Hero Hero"
+                    "Menu Main Main"
+                    "Menu Banner Banner"
+                    "Menu Extra Image";
+
+            }
+            .eight{
+                display:none;
+            }
+        }
+        @media(max-width:350px){
+            #container {
+                grid-template-rows: 50px 50px 1fr 1fr 80px 80px 80px;
+                grid-template-columns:1fr;
+                grid-template-areas:
+                    "Header"
+                    "Menu"
+                    "Hero"
+                    "Main"
+                    "Banner"
+                    "Extra"
+                    "Image";
+
+            }
+            #container .one ,.two ,.three ,.four, .five ,.six ,.seven{
+             width: 100%;
+            }
+            .eight{
+                display:none;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <div class="one">Header</div>
+        <div class="two">Menu</div>
+        <div class="three">Hero</div>
+        <div class="four">Main</div>
+        <div class="five">Banner</div>
+        <div class="six">Extra</div>
+        <div class="seven">Image</div>
+        <div class="eight"></div>
+
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridlayout-5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+        integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #container {
+            display: grid;
+            height: 650px;
+            width: 900px;
+            margin: auto;
+            grid-template-rows: 150px 150px 150px 150px 1fr;
+            grid-template-columns: 150px 150px 150px 150px 1fr;
+            grid-template-areas:
+                "bg-1 bg-2 bg-2 bg-3 navbar "
+                "bg-4 bg-5 bg-5 bg-6 navbar"
+                "bg-7 bg-7 bg-8 bg-8 navbar "
+                "bg-9 bg-10 bg-10 bg-11 navbar";
+            gap: 5px;
+            text-align: center;
+            border: 1px groove red;
+
+        }
+        .navbar{
+            background-color: black;
+            grid-area: navbar;
+        }
+          h2{
+            color: white;
+            font-size: 25px;
+        }
+        .navbar ul li a{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+
+        }
+        .icon>i{
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+        }
+
+        .bg-1 {
+            grid-area: "bg-1";
+            background-image: url('../images/car1.jpg');
+
+        }
+
+        .bg-2 {
+            grid-area: "bg-2";
+            background-image: url('../images/car10.jpg');
+
+        }
+
+        .bg-3 {
+            grid-area: "bg-3";
+            background-image: url('../images/car11.jpg');
+
+        }
+
+        .bg-4 {
+            grid-area: "bg-4";
+            background-image: url('../images/car12.jpg');
+
+        }
+
+        .bg-5 {
+            grid-area: "bg-5";
+            background-image: url('../images/car13.jpg');
+
+        }
+
+        .bg-6 {
+            grid-area: "bg-6";
+            background-image: url('../images/car14.jpg');
+
+        }
+
+        .bg-7 {
+            grid-area: "bg-7";
+            background-image: url('../images/car16.jpg');
+
+        }
+
+        .bg-8 {
+            grid-area: "bg-8";
+            background-image: url('../images/car2.jpg');
+
+        }
+
+        .bg-9 {
+            grid-area: "bg-9";
+            background-image: url('../images/car3.jpg');
+
+        }
+
+        .bg-10 {
+            grid-area: "bg-10";
+            background-image: url('../images/car4.jpg');
+
+        }
+
+        .bg-11 {
+            grid-area: "bg-11";
+            background-image: url('../images/car5.jpg');
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <div class="navbar">
+            <h2>SHUTTER</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Bio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="icons">
+           
+        </div>
+        </div>
+        <div class="bg-1"></div>
+        <div class="bg-2"></div>
+        <div class="bg-3"></div>
+        <div class="bg-4"></div>
+        <div class="bg-5"></div>
+        <div class="bg-6"></div>
+        <div class="bg-7"></div>
+        <div class="bg-8"></div>
+        <div class="bg-9"></div>
+        <div class="bg-10"></div>
+        <div class="bg-11"></div>
+      
+
+    </section>
+</body>
+
+</html>

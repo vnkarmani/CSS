@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridlayout-12</title>
+    <style>
+        #container {
+            display: grid;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            margin-top: 100px;
+            grid-template-rows: 1fr 60px 60px 60px 60px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "one one one one"
+                "two three four five"
+                "two six four five"
+                "two six seven five"
+                "two six eight nine";
+            gap: 5px;
+            text-align: center;
+            border: 3px solid;
+        }
+
+        .one {
+            grid-area: one;
+            background-color: yellow;
+        }
+
+        .two {
+            grid-area: two;
+            background-color: yellow;
+        }
+
+        .three {
+            grid-area: three;
+            background-color: yellow;
+        }
+
+        .four {
+            grid-area: four;
+            background-color: yellow;
+        }
+
+        .five {
+            grid-area: five;
+            background-color: yellow;
+        }
+
+        .six {
+            grid-area: six;
+            background-color: yellow;
+        }
+
+        .seven {
+            grid-area: seven;
+            background-color: yellow;
+        }
+
+        .eight {
+            grid-area: eight;
+            background-color: yellow;
+        }
+
+        .nine {
+            grid-area: nine;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+        <div class="seven">7</div>
+        <div class="eight">8</div>
+        <div class="nine">9</div>
+    </section>
+</body>
+
+</html>
