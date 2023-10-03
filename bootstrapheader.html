@@ -17,67 +17,65 @@
 
         .head {
             background-color: #4c0bce;
-            height: 60px;
+            padding: 15px;
             width: 100%;
-            display: flex;
-
         }
 
         .navi {
-
+            display: inline-block;
             height: 50px;
             width: 500px;
         }
-
-        ul>li {
-            display: inline-block;
-            margin-top: 10px;
-            margin-left: 10px;
-
-        }
-        li>i{
-            padding: 5px;
-        }
-
+        
         a {
             color: white;
             text-decoration: none;
             font-size: 20px;
             font-weight: 400;
-            line-height: 40px;
+            line-height: 50px;
+            padding: 10px;
         }
 
         .class2 {
-            float:right;
+            /* display: inline-block; */
+            float: right;
             height: 50px;
-            width: 300px;
-            color: white;
-            line-height: 40px;
-
+            width: 250px;
+            /* color: black; */
+            line-height: 50px;
         }
-        
+
+        .class2 i {
+            padding: 5px;
+            color: white;
+        }
+
+        span {
+            color: white;
+            font-size: 20px;
+        }
     </style>
 </head>
 
 <body>
     <div class="head">
         <div class="navi">
-            <ul>
-                <li><i class="fa-brands fa-bootstrap fa-2xl" style="color: #ffffff;"></i></li>
-                <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Docs</a></li>
-                <li><a href="https://getbootstrap.com/docs/5.3/examples/">Examples</a></li>
-                <li><a href="https://icons.getbootstrap.com/">Icons</a></li>
-                <li><a href="https://themes.getbootstrap.com/">Themes</a></li>
-                <li><a href="https://blog.getbootstrap.com/">Blogs</a></li>
-            </ul>
+
+            <i class="fa-brands fa-bootstrap fa-2xl" style="color: #ffffff;"></i>
+            <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Docs</a>
+            <a href="https://getbootstrap.com/docs/5.3/examples/">Examples</a>
+            <a href="https://icons.getbootstrap.com/">Icons</a>
+            <a href="https://themes.getbootstrap.com/">Themes</a>
+            <a href="https://blog.getbootstrap.com/">Blogs</a>
         </div>
         <div class="class2">
-            <ul>
-                <li><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></li>
-                <li><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></li>
-                <li>v5.3<i class="fa-solid fa-caret-down"></i></li>
-                <li><i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-caret-down"></i></li>
-            </ul>
+
+            <i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+            <span> v5.3</span>
+            <i class="fa-solid fa-caret-down"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-caret-down"></i>
         </div>
 
     </div>
