@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            width: 100%;
+           background-color:black;
+           color:white;
+           position: relative;
+        }
+        nav{
+            padding:10px;
+        }
+
+        ul li{
+            display: inline-block;
+            margin: 5px;
+        }
+
+       li a {
+            display:block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            /* font-size: 20px; */
+        }
+        .dropdown{
+            font-size: 18px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top:65px;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li class="dropdown">Home
+                        <div class="dropdown-content">
+                            <a href="#">Home 1</a>
+                            <a href="#">Home 2</a>
+                            <a href="#">Home 3</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">About us</li>
+                    <li class="dropdown">Contact us
+                        <div class="dropdown-content">
+                            <a href="#">Contact 1</a>
+                            <a href="#">Contact 2</a>
+                            <a href="#">Contact 3</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">Services</li>
+                </ul>
+            </nav>
+        </header>
+    </main>
+</body>
+
+</html>
